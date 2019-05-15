@@ -13,22 +13,6 @@ Description: Responsive HTML5 / CSS3 One-page Landing App Template.
  * HERO AREA CSS
  * ABOUT AREA CSS
  * FEATURE AREA CSS
- * SHOWCASE AREA CSS
- * VIDEO AREA CSS
- * SCREENSHOT AREA CSS
- * PRICING AREA CSS
- * TESTIMONIAL AREA CSS
- * COUNTERUP AREA CSS
- * TEAM AREA CSS
- * DOWNLOAD AREA CSS
- * BLOG AREA CSS
- * MAP AND FOOTER AREA CSS
- * SCROLL-TO-TOP AREA CSS
- * INDEX SLIDER PAGE CSS
- * INDEX VIDEO PAGE CSS
- * BLOG PAGE CSS
- * BLOG DETAILS PAGE CSS
- * PRELOADER CSS
 **/
 
 /*----------------------------------
@@ -159,7 +143,7 @@ textarea:focus {
 }
 .sec-title {
     text-align: center;
-    max-width: 400px;
+    max-width: 700px;
     margin: 0 auto 40px;
 }
 .sec-title h2 {
@@ -178,14 +162,7 @@ textarea:focus {
     height: 0;
     margin: auto;
 }
-.pricing-area .sec-title h2 .sec-title-border,
-.download-area .sec-title h2 .sec-title-border {
-    border-color: #fff;
-}
-.pricing-area .sec-title h2 .sec-title-border span::before,
-.download-area .sec-title h2 .sec-title-border span::before {
-    background-color: #fff;
-}
+
 .sec-title h2 .sec-title-border span {
     width: 9px;
     height: 9px;
@@ -204,6 +181,14 @@ textarea:focus {
     width: 100%;
     transform: rotate(45deg);
 }
+
+.sec-title p  {
+    font-size: large;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
 .mt-100 {
     margin-top: 100px;
 }
@@ -215,44 +200,6 @@ textarea:focus {
 }
 .ptb-90 {
     padding: 90px 0;
-}
-.owl-nav div {
-    position: absolute;
-    top: 50%;
-    left: 20px;
-    width: 35px;
-    background: #fff;
-    color: #000;
-    height: 35px;
-    line-height: 36px;
-    border-radius: 100%;
-    text-align: center;
-    font-size: 29px;
-    transition: 0.4s;
-    margin-top: -60px;
-}
-.owl-nav div:hover {
-    background: #000;
-    color: #fff;
-}
-.owl-nav div.owl-next {
-    right: 20px;
-    left: auto;
-}
-.owl-dots {
-    text-align: center;
-    margin-top: 30px;
-}
-.owl-dot {
-    width: 10px;
-    height: 10px;
-    border: 1px solid #0074da;
-    border-radius: 10px;
-    display: inline-block;
-    margin: 0 3px;
-}
-.owl-dot.active {
-    background: #0074da;
 }
 .display-table {
     display: table;
@@ -285,10 +232,11 @@ textarea:focus {
 .appao-btn2 {
     border: 1px solid transparent;
 	border-radius: 25px;
-	background: #000529; /* Old browsers */
-	background-image: -moz-linear-gradient(left, #000529 1%, #002055 24%, #005db5 67%, #0074d9 100%); /* FF3.6-15 */
-	background-image: -webkit-linear-gradient(left, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%); /* Chrome10-25,Safari5.1-6 */
-	background-image: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
+	border-bottom: 1px solid #fff;
+	background: #cccccc; /* Old browsers */
+	background: -moz-linear-gradient(left, #fff 1%, #cccccc 24%, #fff 67%, #cccccc 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #fff 1%,#cccccc 24%,#fff 67%,#cccccc 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #fff 1%,#cccccc 24%,#fff 67%,#cccccc 100%);
 }
 .appao-btn2:hover {
     border: 1px solid #000529;
@@ -374,9 +322,9 @@ input::-webkit-input-placeholder {
 ---------------------------------------*/
 
 /*--------------------------------------
--------- HERO AREA CSS START --------
+-------- banner AREA CSS START --------
 ---------------------------------------*/
-.hero-area {
+.banner-area {
     padding-top: 140px;
 	z-index: 1;
 	position: relative;
@@ -387,7 +335,7 @@ input::-webkit-input-placeholder {
     background-size: cover;
 	overflow: hidden;
 }
-.hero-area::before {
+.banner-area::before {
 	content: "";
 	top: 0;
 	left: 0;
@@ -397,34 +345,52 @@ input::-webkit-input-placeholder {
 	z-index: -1;
 	position: absolute;
 }
-.hero-area-content {
+.banner-area-content {
     color: #222;
 	padding: 80px 0 170px;
 }
-.hero-area-content h1 {
+.banner-area-content h1 {
     color: #222;
 }
-.hero-area-content p {
-    margin: 28px 0 10px;
+.banner-area-content p {
+    margin: 20px 0 0px;
     font-size: large;
 }
-.hero-area-content .appao-btn {
+.banner-area-content .appao-btn {
     margin-top: 15px;
     margin-right: 15px;
 }
 .hand-mockup {
     position: absolute;
-    bottom: 120px;
+    bottom: 50px;
     left: 10px;
 }
+.supported-language {
+    position: absolute;
+    bottom: 10px;
+    height: 100px;
+    display: table;
+}
+.supported-language ul {
+	list-style: none;
+}
+.supported-language li {
+    display: inline;
+}
+
+.supported-language img {
+    height: 100px;
+    width: 100px;
+}
 /*------------------------------------
---------- HERO AREA CSS END ---------
+--------- banner AREA CSS END ---------
 ------------------------------------*/
 
 /*--------------------------------------
 -------- ABOUT AREA CSS START --------
 ---------------------------------------*/
 .about-area {
+    margin-top: 0%;
 	text-align: center;
 }
 .single-about-box {
@@ -519,128 +485,10 @@ input::-webkit-input-placeholder {
 --------- FEATURE AREA CSS END ---------
 ---------------------------------------*/
 
-
-.screenshots-area .sec-title {
-    margin-bottom: 15px;
-}
-.screenshot-wrap .slick-list {
-	padding-bottom: 90px !important;
-	padding-top: 80px !important;
-}
-.single-screenshot.slick-slide {
-	z-index: 1;
-}
-.single-screenshot.slick-active {
-	-webkit-transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	transform: scale(1.1);
-	z-index: 2;
-	transition: all 0.3s ease-in 0s;
-}
-.single-screenshot.slick-center {
-	position: relative;
-	-webkit-transform: scale(1.25);
-	-ms-transform: scale(1.25);
-	transform: scale(1.25);
-	z-index: 3;
-	transition: all 0.3s ease-in 0s;
-}
-.single-screenshot img {
-	width: 100%;
-}
-.slick-dots {
-	text-align: center;
-	margin-top: 10px;
-}
-.slick-dots li.slick-active button {
-    background-color: #0074da;
-}
-.slick-dots li {
-    display: inline-block;
-}
-.slick-dots li button {
-    background: transparent;
-    border: 2px solid #0074da;
-    border-radius: 100%;
-    font-size: 0;
-    margin: 0 3px;
-    padding: 0;
-	cursor: pointer;
-    width: 15px;
-    height: 15px;
-    display: inline-block;
-}
-.single-screenshot.slick-center {
-    background-image: url(../img/screenshot/mockup.png);
-    background-size: 100% 100%;
-}
-.single-screenshot.slick-center img {
-    padding: 35px 20px 55px;
-}
-/*--------------------------------------
--------- SCREENSHOT AREA CSS END -------
----------------------------------------*/
-
-
-
-
-/*--------------------------------------
--------- BLOG AREA CSS START --------
----------------------------------------*/
-p.form-message.error {
-    color: #a20202;
-}
-p.form-message.sucess {
-    color: #036b03;
-}
-.blog-area.blog-page {
-    padding: 90px 0 130px;
-}
-.single-post {
-    padding: 5px;
-    box-shadow: 0 2px 10px -2px #999;
-}
-.post-thumbnail {
-    overflow: hidden;
-}
-.single-post:hover img {
-    transform: scale(1.2);
-}
-.post-thumbnail img {
-    transition: all 0.4s;
-}
-.post-details {
-    padding: 25px 15px;
-}
-.post-author a {
-    margin-right: 10px;
-    font-size: 12px;
-}
-.post-author a i {
-    margin-right: 5px;
-}
-.post-details a:hover,.post-details a h4:hover {
-    color: #0074da;
-}
-h4.post-title {
-    font-size: 20px;
-    margin: 18px 0;
-}
-h4.post-title a {
-    color: #232323;
-}
-/*--------------------------------------
------------ BLOG AREA CSS END ----------
----------------------------------------*/
-
 /*---------------------------------------
 ----- MAP AND FOOTER AREA CSS START -----
 ---------------------------------------*/
-.google-map {
-    height: 450px;
-}
 .footer {
-    background: url(../img/footer-bg.jpg) no-repeat center / cover;
     position: relative;
     z-index: 1;
     padding-bottom: 35px;
@@ -652,16 +500,16 @@ h4.post-title a {
     left: 0;
     width: 100%;
     height: 100%;
-	background: #000529; /* Old browsers */
-	background: -moz-linear-gradient(left, #000529 1%, #002055 24%, #005db5 67%, #0074d9 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
-    opacity: 0.85;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(left, #cccccc 1%, #ffffff 24%, #ffffff 67%, #cccccc 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #cccccc 1%,#ffffff 24%,#ffffff 67%,#cccccc 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #cccccc 1%,#ffffff 24%,#ffffff 67%,#cccccc 100%);
+    /* opacity: 0.85; */
     z-index: -1;
 }
 .contact-form,
 .contact-address {
-    background: #fff;
+    background: #222222;
     padding: 40px 65px;
     margin-bottom: 40px;
     margin-top: -80px;
@@ -739,18 +587,18 @@ h4.post-title a {
     margin: 0 5px;
 }
 .copyright-area ul li a:hover {
-    background: #0074da;
-    color: #fff;
+    background: #cccccc;
+    color: #222222;
 }
 .copyright-area ul {
     margin-bottom: 30px;
 }
 .copyright-area p {
-    color: #fff;
+    color: #222222;
 }
 .copyright-area p a {
-    color: #fff;
-    border-bottom: 1px solid #fff;
+    color: #222222;
+    border-bottom: 1px solid #222222;
 }
 .subscribe-form form {
     position: relative;
@@ -808,10 +656,10 @@ h4.post-title a {
 	font-size: 18px;
 }
 .scrollToTop:hover {
-    background: #000529;
-    background: -moz-linear-gradient(left, #000529 1%, #002055 24%, #005db5 67%, #0074d9 100%);
-    background: -webkit-linear-gradient(left, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
-    background: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
+	background: #cccccc; /* Old browsers */
+	background: -moz-linear-gradient(left, #fff 1%, #cccccc 24%, #fff 67%, #cccccc 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #fff 1%,#cccccc 24%,#fff 67%,#cccccc 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #fff 1%,#cccccc 24%,#fff 67%,#cccccc 100%);
     border: 1px solid #fff;
     color: #fff;
 }
@@ -821,81 +669,6 @@ h4.post-title a {
 }
 /*--------------------------------------
 --------- SCROLL-TO-TOP CSS END ---------
----------------------------------------*/
-
-/*--------------------------------------
------- INDEX SLIDER PAGE CSS START -----
----------------------------------------*/
-.hero-area-slider .owl-nav div {
-	opacity: 0;
-}
-.hero-area-slider:hover .owl-nav div {
-	opacity: 1;
-}
-.hero-area-single-slide h1,
-.hero-area-single-slide p,
-.hero-area-single-slide a.appao-btn {
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-}
-.hero-area-single-slide h1 {
-    -webkit-transform: translateX(-140px);
-    transform: translateX(-140px);
-    -webkit-transition: all .6s linear 0s;
-    transition: all .6s linear 0s;
-}
-.hero-area-single-slide p {
-    -webkit-transform: translateX(-140px);
-    transform: translateX(-140px);
-    -webkit-transition: all .15s linear 0s;
-    transition: all .15s linear 0s;
-}
-.hero-area-single-slide a.appao-btn {
-    -webkit-transform: translateY(120px);
-    transform: translateY(120px);
-    -webkit-transition: all .10s linear 0s;
-    transition: all .10s linear 0s;
-}
-.hero-area-single-slide img {
-    opacity: 0;
-    -webkit-transition: all .4s;
-    transition: all .4s;
-}
-.active .hero-area-single-slide h1,
-.active .hero-area-single-slide p,
-.active .hero-area-single-slide a.appao-btn {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-}
-.active .hero-area-single-slide h1 {
-    -webkit-transition: all 700ms linear 0s;
-    transition: all 700ms linear 0s;
-}
-.active .hero-area-single-slide p {
-    -webkit-transition: all 1500ms linear 0s;
-    transition: all 1500ms linear 0s;
-}
-.active .hero-area-single-slide a.appao-btn {
-    -webkit-transition: all 1300ms linear 0s;
-    transition: all 1300ms linear 0s;
-}
-.active .hero-area-single-slide img {
-    opacity: 1;
-}
-/*--------------------------------------
-------- INDEX SLIDER PAGE CSS END ------
----------------------------------------*/
-
-/*--------------------------------------
------- INDEX VIDEO PAGE CSS START -----
----------------------------------------*/
-.hero-area > .mbYTP_wrapper {
-	z-index: -2 !important;
-}
-/*--------------------------------------
-------- INDEX VIDEO PAGE CSS END ------
 ---------------------------------------*/
 
 /*--------------------------------------
