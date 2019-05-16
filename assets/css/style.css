@@ -147,6 +147,18 @@ textarea:focus {
     max-width: 700px;
     margin: 0 auto 40px;
 }
+
+.sec-title i {
+    color: #000000;
+    display: inline;
+}
+
+.sec-title img {
+    height: 80px;
+    width: 80px;
+    object-fit:scale-down;
+}
+
 .sec-title h2 {
     padding-bottom: 20px;
     margin-bottom: 20px;
