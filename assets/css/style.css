@@ -356,6 +356,7 @@ input::-webkit-input-placeholder {
 .supported-language img {
     height: 100px;
     width: 100px;
+    object-fit:scale-down;
 }
 /*------------------------------------
 --------- banner AREA CSS END ---------
@@ -458,6 +459,25 @@ input::-webkit-input-placeholder {
 }
 /*--------------------------------------
 --------- FEATURE AREA CSS END ---------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- SHOWCASE AREA CSS START -------
+---------------------------------------*/
+.showcase-area {
+	padding-bottom: 50px;
+}
+.single-showcase-box {
+	padding: 0 0 40px;
+}
+.single-showcase-box p {
+	margin: 20px 0 25px;
+}
+.single-showcase-box h4 {
+	font-size: 20px;
+}
+/*--------------------------------------
+--------- SHOWCASE AREA CSS END --------
 ---------------------------------------*/
 
 /*---------------------------------------
