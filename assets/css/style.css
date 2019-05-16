@@ -124,6 +124,7 @@ input[type="tel"],
 input[type="search"],
 input[type="password"],
 input[type="number"],
+
 textarea {
     background: transparent;
     width: 100%;
@@ -181,14 +182,12 @@ textarea:focus {
     width: 100%;
     transform: rotate(45deg);
 }
-
 .sec-title p  {
     font-size: large;
     text-align: center;
     margin-bottom: 20px;
 
 }
-
 .mt-100 {
     margin-top: 100px;
 }
@@ -210,40 +209,7 @@ textarea:focus {
     display: table-cell;
     vertical-align: middle;
 }
-.header.sticky .mainmenu li a.appao-btn ,
-.mainmenu li a.appao-btn,
-.appao-btn {
-    border: 1px solid #fff;
-    color: #fff;
-	border-radius: 15px;
-    padding: 6px 25px;
-    display: inline-block;
-    text-transform: uppercase;
-	cursor: pointer;
-	font-weight: 500;
-}
-.header.sticky .mainmenu li a.appao-btn:hover ,
-.mainmenu li a.appao-btn:hover,
-.appao-btn:hover {
-    background: #fff;
-    border: 1px solid #fff;
-    color: #666;
-}
-.appao-btn2 {
-    border: 1px solid transparent;
-	border-radius: 25px;
-	border-bottom: 1px solid #fff;
-	background: #cccccc; /* Old browsers */
-	background: -moz-linear-gradient(left, #fff 1%, #cccccc 24%, #fff 67%, #cccccc 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #fff 1%,#cccccc 24%,#fff 67%,#cccccc 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #fff 1%,#cccccc 24%,#fff 67%,#cccccc 100%);
-}
-.appao-btn2:hover {
-    border: 1px solid #000529;
-	background: transparent;
-	background-image: none;
-    color: #000529;
-}
+
 .flexbox-center {
     display: -moz-flex;
     display: -ms-flex;
@@ -305,11 +271,8 @@ input::-webkit-input-placeholder {
 	display: none;
 }
 .header.sticky {
-	border-bottom: 1px solid #fff;
-	background: #cccccc; /* Old browsers */
-	background: -moz-linear-gradient(left, #fff 1%, #cccccc 24%, #fff 67%, #cccccc 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #fff 1%,#cccccc 24%,#fff 67%,#cccccc 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #fff 1%,#cccccc 24%,#fff 67%,#cccccc 100%);
+	border-bottom: 1px solid #cccccc;
+    background: #ffffff;
 }
 .header.sticky {
 	padding: 10px 0;
@@ -325,7 +288,7 @@ input::-webkit-input-placeholder {
 -------- banner AREA CSS START --------
 ---------------------------------------*/
 .banner-area {
-    padding-top: 140px;
+    padding-top: 100px;
 	z-index: 1;
 	position: relative;
     background-image: url(../img/background-image.png);
@@ -333,7 +296,7 @@ input::-webkit-input-placeholder {
     background-position: center;
 	background-attachment: fixed;
     background-size: cover;
-	overflow: hidden;
+    overflow: hidden;
 }
 .banner-area::before {
 	content: "";
@@ -353,23 +316,36 @@ input::-webkit-input-placeholder {
     color: #222;
 }
 .banner-area-content p {
-    margin: 20px 0 0px;
+    margin: 10px 0 0px;
     font-size: large;
-}
-.banner-area-content .appao-btn {
-    margin-top: 15px;
-    margin-right: 15px;
 }
 .hand-mockup {
     position: absolute;
-    bottom: 50px;
+    bottom: 40px;
     left: 10px;
 }
+.learn-btn {
+    margin-top: 30px;
+    border: 1px solid #cccccc;
+    color: #222;
+	border-radius: 15px;
+    padding: 6px 25px;
+    display: inline-block;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 20px;
+}
+.learn-btn:hover {
+    background: #cccccc;
+    border: 1px solid #fff;
+    color: #666;
+}
 .supported-language {
-    position: absolute;
-    bottom: 10px;
+    position: relative;
+    bottom: 5px;
     height: 100px;
     display: table;
+    overflow: hidden;
 }
 .supported-language ul {
 	list-style: none;
@@ -377,7 +353,6 @@ input::-webkit-input-placeholder {
 .supported-language li {
     display: inline;
 }
-
 .supported-language img {
     height: 100px;
     width: 100px;
