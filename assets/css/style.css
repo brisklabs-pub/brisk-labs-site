@@ -474,22 +474,31 @@ input::-webkit-input-placeholder {
 ---------------------------------------*/
 
 /*--------------------------------------
--------- SHOWCASE AREA CSS START -------
+-------- PROCEDURE AREA CSS START -------
 ---------------------------------------*/
-.showcase-area {
-	padding-bottom: 50px;
+.procedure-area {
+    padding-bottom: 50px;
 }
-.single-showcase-box {
-	padding: 0 0 40px;
+.procedure-box {
+    padding: 0 0 40px;
 }
-.single-showcase-box p {
+.procedure-box p {
 	margin: 20px 0 25px;
 }
-.single-showcase-box h4 {
+.procedure-box h4 {
 	font-size: 20px;
 }
+.procedure-box ul {
+    margin: 10px 20px 25px;
+}
+.procedure-box li {
+    /* text-indent: 20px; */
+    text-align-last: left; 
+    list-style-type: square;
+}
+
 /*--------------------------------------
---------- SHOWCASE AREA CSS END --------
+--------- PROCEDURE AREA CSS END --------
 ---------------------------------------*/
 
 /*---------------------------------------
@@ -676,79 +685,4 @@ input::-webkit-input-placeholder {
 }
 /*--------------------------------------
 --------- SCROLL-TO-TOP CSS END ---------
----------------------------------------*/
-
-/*--------------------------------------
--------- BREADCRUMB CSS START --------
----------------------------------------*/
-.breadcrumb-area {
-    text-align: center;
-}
-.hero-area.breadcrumb-area {
-    padding: 130px 0 100px;
-}
-.hero-area.breadcrumb-area .hero-area-content {
-    padding: 0;
-}
-.breadcrumb-area ul li {
-    display: inline-block;
-}
-.breadcrumb-area ul li a {
-    color: #fff;
-	padding: 0 10px;
-	position: relative;
-}
-.breadcrumb-area ul li a::before {
-	position: absolute;
-	right: -2px;
-	top: 0;
-	bottom: 0;
-	margin: auto;
-	content: "/";
-}
-.breadcrumb-area ul li:last-child a::before {
-	content: "";
-}
-.breadcrumb-area ul {
-    margin-top: 10px;
-}
-.breadcrumb-area ul li a:hover {
-    color: #000;
-}
-/*--------------------------------------
---------- BREADCRUMB CSS END ---------
----------------------------------------*/
-
-/*--------------------------------------
--------- BREADCRUMB CSS START --------
----------------------------------------*/
-.blog-page .single-post {
-	margin-bottom: 40px;
-}
-.pagination {
-    text-align: center;
-    display: block;
-    margin-bottom: 40px;
-}
-.pagination li {
-    display: inline-block;
-}
-.pagination li a {
-    background-color: #000529;
-    background-image: -moz-linear-gradient(left, #000529 1%, #002055 24%, #005db5 67%, #0074d9 100%);
-    background-image: -webkit-linear-gradient(left, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
-    background-image: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    color: #fff;
-    font-size: 18px;
-}
-.pagination li a:hover {
-	background-image: none;
-    background-color: #000;
-}
-/*--------------------------------------
---------- BREADCRUMB CSS END ---------
 ---------------------------------------*/
