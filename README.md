@@ -1,2 +1,1 @@
-# brisklab.github.io
-Brisk Lab Website
+# Brisk Labs Website
