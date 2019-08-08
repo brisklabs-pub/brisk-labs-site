@@ -25,14 +25,14 @@
 	}
 	ul.slicknav_nav {
 		position: absolute;
-		background: #ffffff; /* Old browsers */
-		background: -moz-linear-gradient(left, #cccccc 1%, #ffffff 24%, #ffffff 67%, #cccccc 100%); /* FF3.6-15 */
-		background: -webkit-linear-gradient(left, #cccccc 1%,#ffffff 24%,#ffffff 67%,#cccccc 100%); /* Chrome10-25,Safari5.1-6 */
-		background: linear-gradient(to right, #cccccc 1%,#ffffff 24%,#ffffff 67%,#cccccc 100%);
+		background: #cccccc; /* Old browsers */
+		background: -moz-linear-gradient(left, #cccccc 1%, #cccccc 24%, #cccccc 67%, #cccccc 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, #cccccc 1%,#cccccc 24%,#cccccc 67%,#cccccc 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, #cccccc 1%,#cccccc 24%,#cccccc 67%,#cccccc 100%);
 		right: 15px;
 		top: 100%;
 		z-index: 9;
-		border: 2px solid #fff;
+		border: 2px solid #888888;
 		padding: 5px 10px 10px;
 		margin-top: 8px;
 	}
