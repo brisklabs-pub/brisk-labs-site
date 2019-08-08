@@ -497,6 +497,18 @@ input::-webkit-input-placeholder {
     list-style-type: square;
 }
 
+.worked-with-box li {
+    /* text-indent: 20px; */
+    text-align-last: left; 
+    list-style-type: none;
+}
+
+.worked-with-box img {
+    margin: 20px;
+    width: 200px;
+    height: auto;
+}
+
 /*--------------------------------------
 --------- PROCEDURE AREA CSS END --------
 ---------------------------------------*/
