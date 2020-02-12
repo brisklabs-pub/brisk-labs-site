@@ -484,6 +484,70 @@ input::-webkit-input-placeholder {
 ---------------------------------------*/
 
 /*--------------------------------------
+------ SCREENSHOT AREA CSS START -------
+---------------------------------------*/
+.screenshots-area .sec-title {
+    margin-bottom: 15px;
+}
+.screenshot-wrap .slick-list {
+	padding-bottom: 90px !important;
+	padding-top: 80px !important;
+}
+.single-screenshot.slick-slide {
+	z-index: 1;
+}
+.single-screenshot.slick-active {
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+	z-index: 2;
+	transition: all 0.1s ease-in 0s;
+}
+.single-screenshot.slick-center {
+	position: relative;
+	-webkit-transform: scale(1.25);
+	-ms-transform: scale(1.25);
+	transform: scale(1.25);
+	z-index: 3;
+	transition: all 0.1s ease-in 0s;
+}
+.single-screenshot img {
+	width: 100%;
+}
+.slick-dots {
+	text-align: center;
+	margin-top: 10px;
+}
+.slick-dots li.slick-active button {
+    background-color: #0074da;
+}
+.slick-dots li {
+    display: inline-block;
+}
+.slick-dots li button {
+    background: transparent;
+    border: 2px solid #0074da;
+    border-radius: 100%;
+    font-size: 0;
+    margin: 0 3px;
+    padding: 0;
+	cursor: pointer;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+.single-screenshot.slick-center {
+    /* background-image: url(../img/projects/mockup.png); */
+    background-size: 100% 100%;
+}
+.single-screenshot.slick-center img {
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: black;
+    box-shadow: 0 0 5px #ccc;
+}
+
+/*--------------------------------------
 -------- PROCEDURE AREA CSS START -------
 ---------------------------------------*/
 .procedure-area {
