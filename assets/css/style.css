@@ -5,16 +5,6 @@ Author: Jsoft
 Description: Responsive HTML5 / CSS3 One-page Landing App Template.
 */
 
-/**
- *** CSS Indexing ***
- * THEME DEFAULT CSS
- * RESET CSS
- * HEADER AREA CSS
- * HERO AREA CSS
- * ABOUT AREA CSS
- * FEATURE AREA CSS
-**/
-
 /*----------------------------------
 --------- THEME DEFAULT CSS --------
 ----------------------------------*/
@@ -145,7 +135,7 @@ textarea:focus {
 .sec-title {
     text-align: center;
     max-width: 700px;
-    margin: 0 auto 40px;
+    margin: 0 auto 25px;
 }
 
 .sec-title i {
@@ -160,8 +150,8 @@ textarea:focus {
 }
 
 .sec-title h2 {
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
     position: relative;
     top: -6px;
 }
@@ -210,7 +200,7 @@ textarea:focus {
     padding: 100px 0;
 }
 .ptb-90 {
-    padding: 90px 0;
+    padding: 60px 0;
 }
 .display-table {
     display: table;
@@ -417,137 +407,6 @@ input::-webkit-input-placeholder {
 ---------------------------------------*/
 
 /*--------------------------------------
--------- FEATURE AREA CSS START --------
----------------------------------------*/
-.feature-area {
-	z-index: 1;
-	position: relative;
-    background-image: url(../img/feature-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-.feature-area::before {
-	content: "";
-	top: 0;
-	left: 0;
-    opacity: 0.85;
-	right: 0;
-	bottom: 0;
-	background: #ffffff; /* Old browsers */
-	background: -moz-linear-gradient(left, #cccccc 1%, #ffffff 24%, #ffffff 67%, #cccccc 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #cccccc 1%,#ffffff 24%,#ffffff 67%,#cccccc 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #cccccc 1%,#ffffff 24%,#ffffff 67%,#cccccc 100%);
-	z-index: -1;
-	position: absolute;
-}
-.single-feature-box h4 {
-    font-size: 20px;
-    margin-bottom: 5px;
-}
-.single-feature-box li {
-    margin-bottom: 45px;
-    display: flex;
-}
-.single-feature-box li:last-child {
-    margin-bottom: 0;
-}
-.feature-box-info {
-    flex: 5;
-}
-.feature-box-icon {
-    flex: 1;
-	font-size: 20px;
-	transition: all 0.4s;
-}
-.single-feature-box li:hover .feature-box-icon i::before {
-    border-radius: 0;
-}
-.single-feature-box h2,
-.single-feature-box h3,
-.single-feature-box h4,
-.single-feature-box {
-	color: #fff;
-}
-.feature-box-icon i::before {
-    border: 2px dashed #fff;
-    width: 40px;
-    display: inline-block;
-    height: 40px;
-    text-align: center;
-    line-height: 38px;
-    border-radius: 100%;
-	transition: all 0.4s;
-}
-/*--------------------------------------
---------- FEATURE AREA CSS END ---------
----------------------------------------*/
-
-/*--------------------------------------
------- SCREENSHOT AREA CSS START -------
----------------------------------------*/
-.screenshots-area .sec-title {
-    margin-bottom: 15px;
-}
-.screenshot-wrap .slick-list {
-	padding-bottom: 90px !important;
-	padding-top: 80px !important;
-}
-.single-screenshot.slick-slide {
-	z-index: 1;
-}
-.single-screenshot.slick-active {
-	-webkit-transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	transform: scale(1.1);
-	z-index: 2;
-	transition: all 0.1s ease-in 0s;
-}
-.single-screenshot.slick-center {
-	position: relative;
-	-webkit-transform: scale(1.25);
-	-ms-transform: scale(1.25);
-	transform: scale(1.25);
-	z-index: 3;
-	transition: all 0.1s ease-in 0s;
-}
-.single-screenshot img {
-	width: 100%;
-}
-.slick-dots {
-	text-align: center;
-	margin-top: 10px;
-}
-.slick-dots li.slick-active button {
-    background-color: #0074da;
-}
-.slick-dots li {
-    display: inline-block;
-}
-.slick-dots li button {
-    background: transparent;
-    border: 2px solid #0074da;
-    border-radius: 100%;
-    font-size: 0;
-    margin: 0 3px;
-    padding: 0;
-	cursor: pointer;
-    width: 15px;
-    height: 15px;
-    display: inline-block;
-}
-.single-screenshot.slick-center {
-    /* background-image: url(../img/projects/mockup.png); */
-    background-size: 100% 100%;
-}
-.single-screenshot.slick-center img {
-    border-radius: 10px;
-    width: 250px;
-    box-shadow: black;
-    box-shadow: 0 0 5px #ccc;
-}
-
-/*--------------------------------------
 -------- PROCEDURE AREA CSS START -------
 ---------------------------------------*/
 .procedure-area {
@@ -582,13 +441,61 @@ input::-webkit-input-placeholder {
     width: 200px;
     height: auto;
 }
-
 /*--------------------------------------
 --------- PROCEDURE AREA CSS END --------
 ---------------------------------------*/
 
+/*--------------------------------------
+-------- BLOG AREA CSS START --------
+---------------------------------------*/
+p.form-message.error {
+    color: #a20202;
+}
+p.form-message.sucess {
+    color: #036b03;
+}
+.blog-area.blog-page {
+    padding: 20px 0 100px;
+}
+.single-post {
+    padding: 5px;
+    box-shadow: 0 2px 10px -2px #999;
+}
+.post-thumbnail {
+    overflow: hidden;
+}
+.single-post:hover img {
+    transform: scale(1.2);
+}
+.post-thumbnail img {
+    transition: all 0.4s;
+}
+.post-details {
+    padding: 25px 15px;
+}
+.post-author a {
+    margin-right: 10px;
+    font-size: 12px;
+}
+.post-author a i {
+    margin-right: 5px;
+}
+.post-details a:hover,.post-details a h4:hover {
+    color: #0074da;
+}
+h4.post-title {
+    font-size: 20px;
+    margin: 18px 0;
+}
+h4.post-title a {
+    color: #232323;
+}
+/*--------------------------------------
+----------- BLOG AREA CSS END ----------
+---------------------------------------*/
+
 /*---------------------------------------
------ MAP AND FOOTER AREA CSS START -----
+----- FOOTER AREA CSS START -----
 ---------------------------------------*/
 .footer {
     position: relative;
