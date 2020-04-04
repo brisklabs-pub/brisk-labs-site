@@ -612,63 +612,41 @@ h4.post-title a {
 /*--------------------------------------
 -------- SCROLL-TO-TOP CSS START --------
 ---------------------------------------*/
-.scrollToTop {
-    width: 40px;
-	display: none;
-    height: 40px;
-    line-height: 39px;
-    background: #000;
-	display: none;
-    color: #fff;
+
+#fixedbutton {
     position: fixed;
-    border: 1px solid #fff;
-    border-radius: 100%;
-    bottom: 15px;
-    right: 15px;
-    z-index: 99;
-    text-align: center;
-	font-size: 18px;
-}
-.scrollToTop:hover {
-	background: #cccccc; /* Old browsers */
-	background: -moz-linear-gradient(left, #fff 1%, #cccccc 24%, #fff 67%, #cccccc 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #fff 1%,#cccccc 24%,#fff 67%,#cccccc 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #fff 1%,#cccccc 24%,#fff 67%,#cccccc 100%);
-    border: 1px solid #fff;
-    color: #fff;
-}
-.scrollToTop:focus {
-    border: 1px solid #fff;
-    color: #fff;
-}
-
-section#chat_button {
-    position: relative;
-    float: left;
-    max-width: 250px;
-    
-    min-height: 210px;
-  
-    top: -10px;
-}
-
-.lwc-chat-button {
-    border-radius: 0;
-    background-color: #00AFF0;
-    display: inline-flex;
-    font-size: 12px;
-    padding: 4px 12px;
-    text-align: center;
-    line-height: 26px;
-    cursor: pointer;
-    color: white;
-    margin: 2px;
-    padding: 10px;
-    fill: transparent;
-    align-items: center;
-    box-sizing: content-box;
+    bottom: 0px;
+    right: 0px;
     z-index: 2147483647;
 }
-/*--------------------------------------
---------- SCROLL-TO-TOP CSS END ---------
----------------------------------------*/
+/* .scrollToTop { */
+.chat{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 140px;
+    height: 140px;
+    transform: translateY(70px);
+    transition: all 250ms ease-out;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 2147483647;
+}
+/*
+.scrollToTop:hover {
+	/* background: #cccccc; /* Old browsers */
+	/* background: -moz-linear-gradient(left, #fff 1%, #cccccc 24%, #fff 67%, #cccccc 100%); FF3.6-15 */
+	/* background: -webkit-linear-gradient(left, #fff 1%,#cccccc 24%,#fff 67%,#cccccc 100%); Chrome10-25,Safari5.1-6 */
+	/* background: linear-gradient(to right, #fff 1%,#cccccc 24%,#fff 67%,#cccccc 100%); */
+    /* border: 1px solid #fff; */
+    /* color: #fff; */
+/* } */
+/* .scrollToTop:focus { */
+    /* border: 1px solid #fff; */
+    /* color: #fff; */
+/* } */
