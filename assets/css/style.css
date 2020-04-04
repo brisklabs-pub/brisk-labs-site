@@ -613,40 +613,9 @@ h4.post-title a {
 -------- SCROLL-TO-TOP CSS START --------
 ---------------------------------------*/
 
-#fixedbutton {
+#chat {
     position: fixed;
     bottom: 0px;
     right: 0px;
     z-index: 2147483647;
 }
-/* .scrollToTop { */
-.chat{
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    width: 140px;
-    height: 140px;
-    transform: translateY(70px);
-    transition: all 250ms ease-out;
-    border-radius: 50%;
-    opacity: 0;
-    z-index: 2147483647;
-}
-/*
-.scrollToTop:hover {
-	/* background: #cccccc; /* Old browsers */
-	/* background: -moz-linear-gradient(left, #fff 1%, #cccccc 24%, #fff 67%, #cccccc 100%); FF3.6-15 */
-	/* background: -webkit-linear-gradient(left, #fff 1%,#cccccc 24%,#fff 67%,#cccccc 100%); Chrome10-25,Safari5.1-6 */
-	/* background: linear-gradient(to right, #fff 1%,#cccccc 24%,#fff 67%,#cccccc 100%); */
-    /* border: 1px solid #fff; */
-    /* color: #fff; */
-/* } */
-/* .scrollToTop:focus { */
-    /* border: 1px solid #fff; */
-    /* color: #fff; */
-/* } */
