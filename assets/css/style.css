@@ -641,6 +641,34 @@ h4.post-title a {
     border: 1px solid #fff;
     color: #fff;
 }
+
+section#chat_button {
+    position: relative;
+    float: left;
+    max-width: 250px;
+    
+    min-height: 210px;
+  
+    top: -10px;
+}
+
+.lwc-chat-button {
+    border-radius: 0;
+    background-color: #00AFF0;
+    display: inline-flex;
+    font-size: 12px;
+    padding: 4px 12px;
+    text-align: center;
+    line-height: 26px;
+    cursor: pointer;
+    color: white;
+    margin: 2px;
+    padding: 10px;
+    fill: transparent;
+    align-items: center;
+    box-sizing: content-box;
+    z-index: 2147483647;
+}
 /*--------------------------------------
 --------- SCROLL-TO-TOP CSS END ---------
 ---------------------------------------*/
