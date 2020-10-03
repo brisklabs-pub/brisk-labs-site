@@ -68,7 +68,7 @@ html {
     margin-right: 60px;
 }
 
-#banner .buttons button {
+#banner .buttons a.btn{
     border: 3px solid #23ae84;
     padding: 15px 20px;
     color: #ffffff;
@@ -203,6 +203,10 @@ footer {
 @media screen and (max-width: 767px) {
     #procedures .row:nth-child(2) {
         flex-direction: column-reverse;
+    }
+    
+    .backdrop {
+        text-align: center;
     }
 
     .how-we-work {
