@@ -271,27 +271,33 @@
     </section>
     
     <section id="partners">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
                     <h2 class="body-header"> WHO WORKS WITH US </h2>
                 </div>
-                <div class="col-xs-12 col-md-6 partners-data" data-aos="flip-left" data-aos-duration="1000">
+            </div>
+            <div class="button-control-container">
+                <button id="company-button-left" onclick="scrollBack()" type="button" disabled><i class="fas fa-chevron-left"></i></button>
+                <button id="company-button-right" onclick="scrollRight()" type="button"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div id="company-list-id" class="company-list">
+                <div class="partners-data" data-aos="flip-left" data-aos-duration="1000">
                     <img src="./assets/images/customers/designa-logo.svg" alt="designa">
                 </div>
-                <div class="col-xs-12 col-md-6 partners-data" data-aos="flip-left" data-aos-duration="1000">
+                <div class="partners-data" data-aos="flip-left" data-aos-duration="1000">
                     <img src="./assets/images/customers/ge-logo.png" alt="ge">
                 </div>
-                <div class="col-xs-12 col-md-6 partners-data" data-aos="flip-left" data-aos-duration="1000">
+                <div class="partners-data" data-aos="flip-left" data-aos-duration="1000">
                     <img src="./assets/images/customers/mujeres-261.png" alt="mujeres">
                 </div>
-                <div class="col-xs-12 col-md-6 partners-data" data-aos="flip-left" data-aos-duration="1000">
+                <div class="partners-data" data-aos="flip-left" data-aos-duration="1000">
                     <img src="./assets/images/customers/boracay-jobs.svg" alt="Boracay Jobs">
                 </div>
-                <div class="col-xs-12 col-md-6 partners-data" data-aos="flip-left" data-aos-duration="1000">
+                <div class="partners-data" data-aos="flip-left" data-aos-duration="1000">
                     <img src="./assets/images/customers/carbid-logo.svg" alt="Carbid 360">
                 </div>
-                <div class="col-xs-12 col-md-6 partners-data" data-aos="flip-left" data-aos-duration="1000">
+                <div class="partners-data" data-aos="flip-left" data-aos-duration="1000">
                     <img src="./assets/images/customers/bakeridi-logo.png" alt="bakeridi">
                 </div>
             </div>
@@ -375,6 +381,56 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init();
+    var scrollPos = 0;
+    const companyList = document.getElementById('company-list-id');
+    const buttonRight = document.getElementById('company-button-right');
+    const buttonLeft = document.getElementById('company-button-left');
+    const extendedPadding = 40;
+    const bodyWidth = companyList.offsetWidth;
+
+    function getCompanyList() {
+        let childWidths = 0;
+        if (companyList && companyList.children) {
+            for (let x = 0; x < companyList.children.length; x++) {
+                childWidths += companyList.children[x].offsetWidth;
+            }
+        }
+        return childWidths;
+    }
+
+    function scrollBack() {
+        const childWidths = getCompanyList();
+        if (scrollPos <= 0) {
+            return;
+        }
+        if (buttonRight && buttonRight.hasAttribute('disabled')) {
+            buttonRight.removeAttribute('disabled');
+        }
+        scrollPos -= 300;
+        companyList.scroll({ left: scrollPos, behavior: 'smooth' });
+        if (scrollPos <= 0 && buttonLeft && !buttonLeft.hasAttribute('disabled')) {
+            buttonLeft.setAttribute('disabled', 'disabled');
+        }
+    }
+    function scrollRight() {
+        const childWidths = getCompanyList();
+        const totalWidth = childWidths - bodyWidth;
+        if (scrollPos == totalWidth) {
+            return;
+        }
+        if (buttonLeft && buttonLeft.hasAttribute('disabled')) {
+            buttonLeft.removeAttribute('disabled');
+        }
+        scrollPos += 300;
+        if (scrollPos > totalWidth) {
+            const discrepancy = scrollPos - totalWidth;
+            scrollPos -= discrepancy;
+        }
+        companyList.scroll({ left: scrollPos, behavior: 'smooth' });
+        if (scrollPos == totalWidth && buttonRight && !buttonRight.hasAttribute('disabled')) {
+            buttonRight.setAttribute('disabled', 'disabled');
+        }
+    }
 </script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
