@@ -96,6 +96,10 @@ html {
     color: #137cd7;
 }
 
+img {
+    overflow: hidden;
+}
+
 .who-we-are {
     margin: auto;
     padding: 20px 10px;
@@ -257,7 +261,7 @@ footer {
     border-right: 1px solid #2E80C9;
     border-bottom: 1px solid #2E80C9;
     overflow: hidden;
-    background: #d4d4d4;
+    background: #ffffff;
     height: 160px;
 }
 
