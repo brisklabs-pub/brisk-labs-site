@@ -124,48 +124,6 @@ img {
     border-right: 1px solid #00000017;
 }
 
-#partners {
-    background: #d4d4d4;
-    padding: 40px 0;
-    position: relative;
-}
-
-#partners > .container-fluid {
-    padding: 0;
-}
-
-#partners .body-header {
-    color: #777777;
-}
-
-.company-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    padding: 0 30px;
-}
-
-.button-control-container {
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    top: 105px;
-    z-index: 100;
-}
-
-.button-control-container > button {
-    background-color: #e7e7e7;
-    border: none;
-}
-
-.partners-data > img {
-    height: 120px;
-    width: inherit;
-}
-
 #procedures {
     margin: 50px auto 50px;
 }
@@ -192,6 +150,10 @@ img {
 
 #team .row .data {
     text-align: center;
+}
+
+#services img {
+    width: inherit;
 }
 
 .role {
@@ -236,11 +198,12 @@ footer {
 
 #clients {
     padding: 60px 0;
+    background-color: #d4d4d4;
     
 }
 #clients .clients-wrap {
-    border-top: 1px solid #2E80C9;
-    border-left: 1px solid #2E80C9;
+    border-top: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
     margin-bottom: 30px;
 }
 
@@ -258,17 +221,16 @@ footer {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    border-right: 1px solid #2E80C9;
-    border-bottom: 1px solid #2E80C9;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
     overflow: hidden;
-    background: #ffffff;
+    background: transparent;
     height: 160px;
 }
 
 #clients img {
     transition: all 0.4s ease-in-out;
 }
- 
 
 @media screen and (max-width: 991px) {
     /*#banner img {*/
