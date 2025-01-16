@@ -422,13 +422,7 @@
                 you need any help with one of our open source libraries.
               </p>
               <br />
-              <form
-                id="contact-form"
-                action="https://brisklabs.pythonanywhere.com/message"
-                method="POST"
-                target="hidden_iframe"
-                accept-charset="UTF-8"
-              >
+              <form id="contact-form" onsubmit="sendToTelegram(event)">
                 <div class="form-group">
                   <label for="name">Name</label>
                   <input
@@ -441,20 +435,20 @@
                   />
                 </div>
                 <div class="form-group">
-                  <label for="phone">Email or Phone</label>
+                  <label for="email">Email</label>
                   <input
-                    type="tel"
+                    type="email"
                     class="form-control"
-                    id="phone"
-                    name="contact"
-                    placeholder="Enter Your Email or Phone Number"
+                    id="email"
+                    name="email"
+                    placeholder="Enter Your Email Address"
                     required
                   />
                 </div>
                 <div class="form-group">
                   <label for="subject">Subject</label>
                   <input
-                    type="tel"
+                    type="text"
                     class="form-control"
                     id="subject"
                     name="subject"
@@ -472,15 +466,9 @@
                     required
                   ></textarea>
                 </div>
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  name="submit"
-                  onclick="sendMessage();"
-                >
-                  Send Message
-                </button>
+                <button type="submit" class="btn btn-primary">Send Message</button>
               </form>
+
             </div>
           </div>
           <div class="col-xs-12 col-md-6 p-5 align-self-center contact-detail">
@@ -555,4 +543,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
   <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/other.js"></script>
+
 </html>
