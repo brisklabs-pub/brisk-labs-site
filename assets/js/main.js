@@ -62,19 +62,21 @@ function sendMessage() {
     if (form) {
         var formData = new FormData(form);
         $.ajax({
-            url: "https://brisklabs.pythonanywhere.com/message",
+            url: "https://brisklabs.pythonanywhere.com/msg/brisklabs",
             type: "POST",
             data: formData,
             processData: false,
             contentType: false,
             success: function(response) {
-                form.reset();
                 alert(response.message);
+                form.reset();
             },
             error: function(xhr, status, error) {
+                alert("Problem sending message, please email us at contact@brisklabs.dev");
                 form.reset();
-                alert("Problem sending message");
             }
         });
+    } else {
+        alert("Problem encounter, please email us at contact@brisklabs.dev");
     }
 }
