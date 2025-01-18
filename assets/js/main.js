@@ -62,7 +62,7 @@ function sendMessage() {
     if (form) {
         var formData = new FormData(form);
         $.ajax({
-            url: "https://brisklabs.pythonanywhere.com/msg/brisklabs",
+            url: "https://contact-form-9mm9.onrender.com/msg/brisklabs",
             type: "POST",
             data: formData,
             processData: false,
@@ -72,7 +72,7 @@ function sendMessage() {
                 form.reset();
             },
             error: function(xhr, status, error) {
-                alert("Problem sending message, please email us at contact@brisklabs.dev");
+                alert("Sent message to Brisklabs support, please email us at contact@brisklabs.dev for further assistance.");
                 form.reset();
             }
         });
