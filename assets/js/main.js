@@ -57,10 +57,22 @@ function scrollRight() {
     }
 }
 
+function resetBtnState() { 
+    let submitBtn = document.getElementById('submit-btn');
+    if (!submitBtn) {
+        return;
+    }
+    submitBtn.innerText = "Send Message";
+    submitBtn.removeAttribute('disabled');
+}
+
 function sendMessage() {
     let form = document.getElementById('contact-form');
+    let submitBtn = document.getElementById('submit-btn');
     if (form) {
         var formData = new FormData(form);
+        submitBtn.innerText = "Sending...";
+        submitBtn.setAttribute('disabled', 'true');
         $.ajax({
             url: "https://contact-form-9mm9.onrender.com/msg/brisklabs",
             type: "POST",
@@ -69,14 +81,17 @@ function sendMessage() {
             contentType: false,
             success: function(response) {
                 alert(response.message);
+                resetBtnState();
                 form.reset();
             },
             error: function(xhr, status, error) {
+                resetBtnState();
                 alert("Sent message to Brisklabs support, please email us at contact@brisklabs.dev for further assistance.");
                 form.reset();
             }
         });
     } else {
+        resetBtnState();
         alert("Problem encounter, please email us at contact@brisklabs.dev");
     }
 }
