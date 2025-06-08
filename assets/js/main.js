@@ -71,10 +71,11 @@ function sendMessage() {
     let submitBtn = document.getElementById('submit-btn');
     if (form) {
         var formData = new FormData(form);
+        formData.append("channel", "brisklabs")
         submitBtn.innerText = "Sending...";
         submitBtn.setAttribute('disabled', 'true');
         $.ajax({
-            url: "https://contact-form-9mm9.onrender.com/msg/brisklabs",
+            url: "https://service.brisklabs.dev/contact-form",
             type: "POST",
             data: formData,
             processData: false,
