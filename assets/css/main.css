@@ -14,7 +14,9 @@ html {
 .navbar {
     font-weight: 600;
 }
-
+.nav-link {
+    font-size: medium;
+}
 .menu-wrap {
     width: 100%;
 }
@@ -52,14 +54,15 @@ html {
 .first-headline > h1 {
     color: #ffffff;
     font-weight: 600;
+    font-size: 2em;
 }
 
 .second-headline {
-    /*margin: auto;*/
-    color: #000000b5;
+    color: #fff;
     font-size: 18px;
     font-weight: 400;
-    /*font-family: 'Roboto Mono', monospace;*/
+    font-size: 1.2em;
+    font-style: italic;
 }
 
 .banner-image-container {
