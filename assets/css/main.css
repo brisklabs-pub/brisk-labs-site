@@ -234,6 +234,41 @@ footer {
 #clients img {
     transition: all 0.4s ease-in-out;
 }
+.clients-auto-scroll {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.clients-track {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+
+  /* pause for now */
+  /* animation: autoScroll 25s linear infinite; */
+}
+
+.client-item {
+  flex: 0 0 auto;
+  width: 160px;
+}
+
+.client-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* smooth infinite animation */
+@keyframes autoScroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* pause when hovered */
+.clients-auto-scroll:hover .clients-track {
+  animation-play-state: paused;
+}
 
 @media screen and (max-width: 991px) {
     /*#banner img {*/
@@ -252,7 +287,6 @@ footer {
         margin: -100px 0 0;
     }
 }
-
 
 @media screen and (max-width: 767px) {
     #procedures .row:nth-child(2) {
