@@ -213,17 +213,17 @@ footer {
 
 .clients-track {
   display: flex;
-  gap: 40px;
+  gap: 20px;
   width: max-content;
 
   /* pause for now */
-  /* animation: autoScroll 25s linear infinite; */
+  animation: autoScroll 25s linear infinite;
 }
 
 .client-item {
   flex: 0 0 auto;
-  width: 160px;
-  /* height: 160px; */
+  width: 150px;
+  /* height: 400px; */
   padding: 10px;
   display: -webkit-box;
   display: -webkit-flex;
