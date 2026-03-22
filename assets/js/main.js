@@ -70,7 +70,23 @@ function sendMessage() {
     let form = document.getElementById('contact-form');
     let submitBtn = document.getElementById('submit-btn');
     if (form) {
+        // Honeypot validation
+        if (form.website.value) {
+            alert("Invalid submission");
+            resetBtnState();
+            return;
+        }
         var formData = new FormData(form);
+        const name = formData.get('name')?.toString().trim();
+        const contact = formData.get('contact')?.toString().trim();
+        const message = formData.get('message')?.toString().trim();
+
+        if (!name || !contact || !message) {
+            alert("Please fill in all required fields.");
+            resetBtnState();
+            return;
+        }
+
         formData.append("channel", "brisklabs")
         submitBtn.innerText = "Sending...";
         submitBtn.setAttribute('disabled', 'true');
