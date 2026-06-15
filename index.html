@@ -416,7 +416,7 @@
               with next steps, ballpark timeline, and pricing. No commitment, no pressure.
             </p>
             <br />
-            <form id="contact-form">
+              <form id="contact-form">
               <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name" required />
@@ -434,7 +434,8 @@
                 <label for="message">Message</label>
                 <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
               </div>
-              <button id="submit-btn" onclick="sendMessage();" type="button" class="btn btn-primary" name="submit"">Send Message</button>
+              <input type="text" id="website" name="website" style="position:absolute;left:-9999px;" tabindex="-1" autocomplete="off"/>
+              <button id="submit-btn" onclick="sendMessage();" type="button" class="btn btn-primary" name="submit">Send Message</button>
               </form>
             </div>
           </div>
