@@ -179,6 +179,39 @@ span {
   color: #0000009e;
 }
 
+.calendly-btn {
+  width: 100%;
+  padding: 14px 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.calendly-btn i {
+  margin-right: 8px;
+}
+
+.or-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 25px 0;
+}
+
+.or-divider::before,
+.or-divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.or-divider span {
+  padding: 0 15px;
+  color: #888;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
 footer {
   background-color: #2e80c9;
   text-align: center;
@@ -272,10 +305,6 @@ footer {
 }
 
 @media screen and (max-width: 991px) {
-
-  /*#banner img {*/
-  /*    height: 74%;*/
-  /*}*/
   .navbar-nav {
     width: 100%;
   }
