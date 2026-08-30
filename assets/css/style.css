@@ -561,7 +561,7 @@ a {
   letter-spacing: -1px;
 }
 
-.contact-card > .row > .col-lg-6:first-child > p {
+.contact-card>.row>.col-lg-6:first-child>p {
   max-width: 500px;
   color: rgba(255, 255, 255, 0.8);
   font-size: 17px;
@@ -606,7 +606,7 @@ a {
   font-weight: 700;
 }
 
-.contact-form-wrapper > p {
+.contact-form-wrapper>p {
   margin-bottom: 25px;
   color: #8795a3;
   font-size: 13px;
@@ -683,7 +683,7 @@ footer {
 .footer-brand img {
   width: 42px;
   height: 42px;
-    filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
 }
 
 
@@ -811,6 +811,19 @@ footer {
 ========================================================= */
 
 @media (max-width: 767px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .navbar-toggler {
+    padding: 8px 10px;
+  }
+
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
   .navbar-brand {
     font-size: 18px;
   }
@@ -983,8 +996,6 @@ footer {
     padding-right: 15px;
     padding-left: 15px;
   }
-
-  
 
   .featured-project {
     padding: 25px 20px;
