@@ -11,7 +11,6 @@ window.onload = (event) => {
     bodyWidth = companyList.offsetWidth;
 }
 
-
 function getCompanyList() {
     let childWidths = 0;
     if (companyList && companyList.children) {
@@ -71,11 +70,11 @@ function sendMessage() {
     let submitBtn = document.getElementById('submit-btn');
     if (form) {
         // Honeypot validation
-        if (form.website.value) {
-            alert("Invalid submission");
-            resetBtnState();
-            return;
-        }
+        // if (form.website.value) {
+        //     alert("Invalid Contact Submission");
+        //     resetBtnState();
+        //     return;
+        // }
         var formData = new FormData(form);
         const name = formData.get('name')?.toString().trim();
         const contact = formData.get('contact')?.toString().trim();
