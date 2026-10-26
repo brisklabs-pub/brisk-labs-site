@@ -645,8 +645,16 @@
                                     </div>
 
                                     <!-- Honeypot -->
-                                    <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" 
-                                        aria-hidden="true"/>
+                                    <div class="honeypot" aria-hidden="true">
+                                        <label for="website">Leave this field empty</label>
+                                        <input
+                                            type="text"
+                                            id="website"
+                                            name="website"
+                                            tabindex="-1"
+                                            autocomplete="off"
+                                        >
+                                    </div>
 
                                     <button id="submit-btn" type="button" class="contact-submit"
                                         onclick="sendMessage();">
