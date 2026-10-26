@@ -70,11 +70,11 @@ function sendMessage() {
     let submitBtn = document.getElementById('submit-btn');
     if (form) {
         // Honeypot validation
-        // if (form.website.value) {
-        //     alert("Invalid Contact Submission");
-        //     resetBtnState();
-        //     return;
-        // }
+        if (form.website.value) {
+            alert("Invalid Contact Submission");
+            resetBtnState();
+            return;
+        }
         var formData = new FormData(form);
         const name = formData.get('name')?.toString().trim();
         const contact = formData.get('contact')?.toString().trim();
@@ -90,7 +90,7 @@ function sendMessage() {
         submitBtn.innerText = "Sending...";
         submitBtn.setAttribute('disabled', 'true');
         $.ajax({
-            url: "https://service.brisklabs.dev/contact-form",
+            url: "https://contact-form-dyno-api.brisklabs-dev.deno.net/contact-form",
             type: "POST",
             data: formData,
             processData: false,
