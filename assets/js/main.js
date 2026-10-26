@@ -70,7 +70,7 @@ function sendMessage() {
     let submitBtn = document.getElementById('submit-btn');
     if (form) {
         // Honeypot validation
-        if (form.website.value) {
+        if (form.website.value.trim() !== "") {
             alert("Invalid Contact Submission");
             resetBtnState();
             return;
