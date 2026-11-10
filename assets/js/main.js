@@ -90,7 +90,7 @@ function sendMessage() {
         submitBtn.innerText = "Sending...";
         submitBtn.setAttribute('disabled', 'true');
         $.ajax({
-            url: "https://contact-form-dyno-api.brisklabs-dev.deno.net/contact-form",
+            url: "https://contact.brisklabs.dev/contact-form",
             type: "POST",
             data: formData,
             processData: false,
